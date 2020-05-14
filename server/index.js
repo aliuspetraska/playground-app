@@ -41,6 +41,8 @@ app.use('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
-http.createServer(app).listen(process.env.PORT || 3000, () => {
-  console.log('Works!');
+const port = process.env.PORT || 3000;
+
+http.createServer(app).listen(port, () => {
+  console.log(`Works! On port: ${port}`);
 });
