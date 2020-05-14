@@ -1,7 +1,7 @@
 {
   "name": "playground-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "playground-app",
   "main": "server/index.js",
   "scripts": {
     "install": "npm --prefix ./server install && npm --prefix ./client install",
@@ -12,13 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/aliuspetraska/playground-app.git"
   },
-  "author": "",
+  "author": "alius.petraska@gmail.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aliuspetraska/playground-app/issues"
-  },
-  "homepage": "https://github.com/aliuspetraska/playground-app#readme",
   "devDependencies": {
     "nodemon": "^2.0.3"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
   }
 }
