@@ -1,8 +1,6 @@
 const rateLimit = require('express-rate-limit');
-const secure = require('express-secure-only');
 const compression = require('compression');
 const bodyParser = require('body-parser');
-const cluster = require('cluster');
 const express = require('express');
 const helmet = require('helmet');
 const http = require('http');
@@ -10,13 +8,6 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
-
-app.enable('strict routing');
-app.enable('trust proxy');
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(secure());
-}
 
 app.use(cors());
 app.use(helmet({ frameguard: false }));
