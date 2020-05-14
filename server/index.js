@@ -35,5 +35,5 @@ app.use('/', (req, res) => {
 const port = process.env.PORT || 3000;
 
 http.createServer(app).listen(port, () => {
-  console.log(`Works! On port: ${port}`);
+  console.log(`Works! Port: ${port}`);
 });
